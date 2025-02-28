@@ -14,13 +14,17 @@
 ---
 
 ## 📷 Screenshots
-**Server**
+
+### Access Point
 ![WI-FI connect](https://github.com/user-attachments/assets/9e73acd3-8f56-41d2-b6fb-75fbc36f3bc7)
-**Server Case** 
+
+### CAD Design 
 ![image](https://github.com/user-attachments/assets/e1407523-6b7e-4c7c-a061-271812de98f3)
-**Game Interface**
+
+### Game Interface
 ![Game Interface](https://github.com/user-attachments/assets/decd9dbf-8441-4c17-963d-291cc6f868f5)
-**Games**
+
+### Games(chess)
 ![games](https://github.com/user-attachments/assets/d6046ffe-ef96-4f70-a6d4-9a4cfeb937e5)
 
 
