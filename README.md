@@ -1,9 +1,11 @@
 # 🎮 MiniGameServer - ESP8266-Based Wi-Fi Game Server
+![mageServer](https://github.com/user-attachments/assets/fb28438c-0354-411e-9fa8-d3a8b9843f64)
+
 
 🚀 **MiniGameServer** is a **self-hosted mini-game server** built using an **ESP8266 microcontroller**. It allows users to connect via Wi-Fi and play games directly from a web browser. The entire setup is powered by **LiPo batteries** and managed with a **TP4056 charging module**.
 
 ## 🛠 Features
-- 📡 **Wi-Fi Hotspot Mode** - Connect and play without internet!
+- 📡 **Wi-Fi Hotspot Mode** - Connect local host(192.168.4.1) and play without internet!
 - 🎮 **Multiple Mini-Games** - Hosted on the ESP8266 with **LittleFS**.
 - 🔋 **Battery Powered** - Runs on **dual 3.7V LiPo batteries**.
 - 🔌 **Rechargeable Module** - Integrated **TP4056** battery management.
@@ -12,17 +14,15 @@
 ---
 
 ## 📷 Screenshots
-![Game Interface](screenshots/game-interface.png)
-![Wi-Fi Connection](screenshots/wifi-connection.png)
+![Game Interface](https://github.com/user-attachments/assets/decd9dbf-8441-4c17-963d-291cc6f868f5)
+![WI-FI connect](https://github.com/user-attachments/assets/9e73acd3-8f56-41d2-b6fb-75fbc36f3bc7)
+![games](https://github.com/user-attachments/assets/d6046ffe-ef96-4f70-a6d4-9a4cfeb937e5)
 
-> **📌 Note:** Add your screenshots inside a `screenshots/` folder in the project.
 
 ---
 
 ## 🎥 Demo Video
-🎬 Watch the full project in action here:  
-👉 **[YouTube Video](https://youtu.be/your-video-link-here)**
-
+<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7300866346345476096" height="900" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
 ---
 
 ## ⚙️ Hardware Used
