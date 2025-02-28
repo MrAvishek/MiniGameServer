@@ -66,5 +66,5 @@ Use the **ESP8266 LittleFS Data Upload Tool** to upload game files to flash memo
 
 ## 🌐 How to Connect & Play
 1. Power on the **ESP8266 MiniGameServer**.
-2. Connect to Wi-Fi **ESP8266-GameServer** (`password: 12345678`).
+2. Connect to Wi-Fi **ESP8266-GameServer**
 3. Open a browser and go to:  
