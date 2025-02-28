@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./src/index.js" type="module"></script>
+    <title>Go Puppy!</title>
+  </head>
+  <body>
+    <main class="gameArea">
+      <!--  GAME START screen -->
+      <div class="message" id="start-game">
+        <h1 id="gopuppy">GO PUPPY!</h1>
+        <p>Get home as fast as you can!</p>
+        <p>Move left and right using the arrow keys to avoid the fight</p>
+        <div id="gooddogstart"></div>
+        <button id="start-game-btn">START</button>
+      </div>
+      
+      <!-- Control -->
+      <div class="controls">
+        <button id="left-btn" class="control-btn">⬅️</button>
+        <button id="right-btn" class="control-btn">➡️</button>
+      </div>
+      
+
+      <!--  SCOREBOEARD  -->
+      <div id="scoreboard" class="legend hidden">
+        <article id="score">Score: <span>0</span></article>
+        <article id="level">Level:<span>1</span></article>
+        <article id="life">Life:<span>3</span></article>
+      </div>
+
+      <!--  GAME LOST screen -->
+      <div id="game-lost" class="message hidden">
+        <h1>You are a BAD dog!</h1>
+        <p>STAY OUT OF TROUBLE FOR GODS SAKE</p>
+        <div id="baddog"></div>
+        <button class="restartButton">PLAY AGAIN</button>
+      </div>
+
+      <!-- GAME WIN screen -->
+
+      <div id="game-won" class="message hidden">
+        <h1>You are a wonderful dog!</h1>
+        <p>Everyone loves you!</p>
+        <div id="gooddogwin"></div>
+        <button class="restartButton">PLAY AGAIN</button>
+      </div>
+    </main>
+  </body>
+</html>

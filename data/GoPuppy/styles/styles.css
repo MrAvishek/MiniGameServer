@@ -1,0 +1,293 @@
+/* Global settings */
+* {
+  box-sizing: border-box;
+  font-family: "Press Start 2P", cursive;
+}
+
+/* game area properties */
+/* Control buttons styling */
+.controls {
+  position: absolute;
+  bottom: 40%; /* Position relative to screen height */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Proper centering */
+  display: flex;
+  gap: 50vw; /* Flexible spacing for buttons */
+}
+
+.control-btn {
+  width: 15vw; /* Responsive size */
+  height: 15vw; /* Keep square shape */
+  max-width: 80px; /* Limit size on larger screens */
+  max-height: 80px;
+  background-color: #333;
+  color: white;
+  font-size: 2rem;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+.control-btn:active {
+  transform: scale(0.9); /* Button click effect */
+}
+
+main {
+  height: 100vh; /* Use full viewport height */
+  width: 100vw;  /* Full viewport width */
+  max-width: 100%; /* Prevent overflow */
+  max-height: 100%;
+  background-color: black;
+  background-image: url("./../img/bg.JPG");
+  margin: 0 auto; /* Center horizontally */
+  position: relative;
+  background-size: cover; /* Cover to fit screen */
+  background-position: center;
+  animation: bg-movement 0.3s steps(3) infinite;
+}
+
+
+
+/* Start screen */
+#gopuppy {
+  text-shadow: dodgerblue 5px -5px;
+}
+
+@keyframes bg-movement {
+  0% {
+    background-position: 0px 0px;
+  }
+
+  100% {
+    background-position: 0px -120px;
+  }
+}
+
+#gooddogstart {
+  background-image: url(./../img/brown.png);
+  background-repeat: no-repeat;
+  width: 55px;
+  height: 60px;
+  position: relative;
+
+  left: 40%;
+  animation: good-dog-start 0.4s steps(4) infinite;
+}
+
+@keyframes good-dog-start {
+  0% {
+    background-position: -228px -42px;
+  }
+
+  100% {
+    background-position: -228px -296px;
+  }
+}
+
+/* scoreboard and indications */
+.score {
+  color: white;
+  border: solid 1px white;
+  width: 30%;
+}
+
+.legend {
+  color: white;
+  font-size: 0.8rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: stretch;
+  align-content: space-between;
+  border: solid 2px white;
+}
+
+/* obstacles and player */
+.enemy {
+  background-image: url("./../img/white.png");
+  width: 36px;
+  height: 50px;
+  position: absolute;
+  animation: sprite-animation 0.3s steps(3) infinite;
+}
+
+#player {
+  position: absolute;
+  bottom: 30px;
+  background-image: url("./../img/black.png");
+
+  background-repeat: no-repeat;
+  width: 36px;
+  height: 50px;
+
+  animation: sprite-animation 0.3s steps(3) infinite;
+}
+
+@keyframes sprite-animation {
+  0% {
+    background-position: -368px -38px;
+  }
+
+  100% {
+    background-position: -366px -230px;
+  }
+}
+
+/* Special effect */
+
+.boom {
+  width: 140px;
+  height: 150px;
+  position: absolute;
+  background-image: url("./../img/boom.png");
+  background-repeat: no-repeat;
+  animation: kaboom 0.5s steps(7) infinite;
+}
+
+@keyframes kaboom {
+  0% {
+    background-position: -22px 0px;
+  }
+
+  100% {
+    background-position: -1154px -23px;
+  }
+}
+
+/*  message boxes */
+
+h1 {
+  font-size: 1.3rem;
+  color: red;
+  width: auto;
+}
+
+.message {
+  position: absolute;
+  color: dodgerblue;
+  background-color: white;
+  border-radius: 12px;
+  border: solid 5px yellow;
+  width: 60vw;
+  max-width: 300px;
+  left:20vw;
+  height: auto;
+  text-align: center;
+  top: 40vh;
+  font-size: 0.8rem;
+  z-index: 1;
+}
+
+button:hover {
+  /* Hover state */
+  background-color: #d9d9d9;
+  color: yellow;
+  box-shadow: none;
+}
+
+button {
+  /* Neutral state */
+  background-color: #07dd00;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 20px;
+  text-shadow: 1px 1px #444;
+  box-shadow: 3px 3px #444;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+button:hover {
+  /* Hover state */
+  background-color: #07dd00;
+  color: yellow;
+  box-shadow: none;
+}
+
+button:active {
+  /* Clicked state */
+  background-color: #eeff00;
+  color: white;
+  box-shadow: none;
+  transform: translateY(2px);
+}
+
+/* reusable class to hide and show elements */
+
+.hidden {
+  display: none;
+}
+
+/* Game WIN screen*/
+
+#gooddogwin {
+  background-image: url(./../img/brown.png);
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 60px;
+  position: relative;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+
+  left: 40%;
+  animation: good-dog-sprite 0.3s steps(3) infinite;
+}
+
+@keyframes good-dog-sprite {
+  0% {
+    background-position: -302px -36px;
+  }
+
+  100% {
+    background-position: -302px -232px;
+  }
+}
+
+/* game LOST screen*/
+
+#baddog {
+  background-image: url(./../img/brown.png);
+  background-repeat: no-repeat;
+  width: 62px;
+  height: 54px;
+  position: relative;
+  left: 40%;
+  animation: bad-dog-sprite 2s steps(4) infinite;
+}
+
+@keyframes bad-dog-sprite {
+  0% {
+    background-position: -34px -44px;
+  }
+
+  100% {
+    background-position: -34px -316px;
+  }
+}
+
+html, body {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* @media (orientation: portrait) {
+  body::before {
+    content: "Rotate your device for the best experience!";
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    color: white;
+    z-index: 9999;
+  }
+} */
