@@ -14,15 +14,20 @@
 ---
 
 ## 📷 Screenshots
-![Game Interface](https://github.com/user-attachments/assets/decd9dbf-8441-4c17-963d-291cc6f868f5)
+**Server**
 ![WI-FI connect](https://github.com/user-attachments/assets/9e73acd3-8f56-41d2-b6fb-75fbc36f3bc7)
+**Server Case** 
+![image](https://github.com/user-attachments/assets/e1407523-6b7e-4c7c-a061-271812de98f3)
+**Game Interface**
+![Game Interface](https://github.com/user-attachments/assets/decd9dbf-8441-4c17-963d-291cc6f868f5)
+**Games**
 ![games](https://github.com/user-attachments/assets/d6046ffe-ef96-4f70-a6d4-9a4cfeb937e5)
 
 
 ---
 
 ## 🎥 Demo Video
-<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7300866346345476096" height="900" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+https://www.linkedin.com/posts/avishek-mondal-a9727b348_esp8266-iot-gamedevelopment-activity-7300866632963264513-nT4k?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFbkn1MBUi_qkoC0kenqMhSG7IfXrgXFln0
 ---
 
 ## ⚙️ Hardware Used
